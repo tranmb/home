@@ -1,3 +1,27 @@
 body {
-    background-color:rgb(242, 194, 242)
+    background-color:rgb(201, 228, 199);
+}
+
+p {
+    background-color: rgb(136, 110, 154);
+    padding: 30px;
+    border-radius: 60px;
+}
+
+p:hover {
+    font-size:30px;
+}
+
+a {
+    color: green;
+    text-decoration:none;
+    cursor:crosshair;
+}
+
+a:visited {
+    color:rgb(0, 0, 0);
+}
+
+a:hover {
+    background-color:rgb(136, 110, 154);
 }
