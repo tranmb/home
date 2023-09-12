@@ -1,0 +1,202 @@
+@font-face {
+    font-family: Script;
+    src: url(Zainer-Initials45mm.otf);
+ }
+
+ @font-face {
+    font-family: lucette-italic;
+    src: url(Lucette-Regularitalic.otf);
+}
+
+@font-face {
+    font-family: lucette-reg;
+    src: url(Lucette-Regular.otf);
+}
+ 
+ * {
+    box-sizing: border-box;
+ }
+
+ 
+.wave {
+    position: fixed;
+    width: 200px;
+    left: 42%;
+    top: 14%;
+}
+
+ a:link {
+    color:rgb(48, 37, 28);
+}
+
+body {
+    background-color: rgb(236, 228, 185);
+    cursor: crosshair;
+}
+
+.space {
+    padding: 20px;
+    text-align: center;
+    color:  rgb(51, 95, 111);
+    font-family: lucette-reg;
+}
+
+.title {
+    background-color:#335f6f;
+    padding: 60px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    
+    border: 1px dotted;
+    border-color: rgb(48, 37, 28);
+    border-radius:70px 70px 0px 0px;
+    
+    font-family: lucette-reg;
+    color: rgb(236, 228, 185);
+    font-size: 40px;
+
+}
+
+.title:hover{
+    color:rgb(255, 204, 213);
+}
+
+
+.summary {
+    background-color:rgb(118, 167, 187); 
+    padding: 100px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px dotted;
+    border-color: rgb(48, 37, 28);
+    
+    font-family: lucette-italic;
+    color: rgb(236, 228, 185);
+    font-size: 16px;
+
+}
+
+.initial {
+    font-family: Script;
+    color: rgb(236, 228, 185);
+    font-size: 50px;
+}
+
+.house1 {
+    background-color:rgb(118, 167, 187); 
+    padding: 100px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px dotted;
+    border-color: rgb(48, 37, 28);
+
+}
+
+.house2 {
+    background-color:rgb(118, 167, 187); 
+    padding: 100px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px dotted;
+    border-color: rgb(48, 37, 28);
+   
+}
+
+.house3 {
+    background-color:rgb(118, 167, 187); 
+    padding: 100px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px dotted;
+    border-color: rgb(48, 37, 28);
+
+}
+
+.house-label {
+    font-family: lucette-reg;
+    color:rgb(51, 95, 111);
+    font-size: 18px;
+}
+
+.place {
+    font-family: lucette-italic;
+    color:rgb(51, 95, 111);
+    font-size: 30px; 
+}
+
+.place:visited{
+    color:rgb(51, 95, 111);
+}
+
+.place:hover {
+    color:rgb(255, 204, 213);
+}
+
+.details {
+    list-style-type: lower-roman;
+    list-style-position:inside;
+    font-family: lucette-reg;
+    font-size: 18px;
+    color:  rgb(51, 95, 111);
+}
+
+/* .break {
+    padding: 10px;
+    text-align: center;
+    color:  rgb(51, 95, 111);
+    font-family: lucette-reg;
+} */
+
+.description {
+    font-family: lucette-italic;
+    font-size: 15px;
+    color:  rgb(51, 95, 111);
+}
+
+/* hover stuff */
+
+.hide {
+    display: none;
+    max-width: 400px;
+  }
+
+.hover-item {
+    font-family: lucette-italic;
+    font-size: 15px;
+    color:  rgb(51, 95, 111);
+}
+
+.hover-item:hover {
+    font-family: lucette-reg;
+}
+      
+.hover-item:hover + .hide {
+    display: block;
+  }
+
+.thanks {
+    background-color:rgb(51, 95, 111);
+    padding: 60px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    
+    border: 1px dotted;
+    border-color: rgb(48, 37, 28);
+    
+    font-family: lucette-reg;
+    color: rgb(236, 228, 185);
+    font-size: 40px;
+    border-radius:0px 0px 70px 70px;
+}
+
+.thanks:hover {
+    color:rgb(255, 204, 213);
+}
+
+

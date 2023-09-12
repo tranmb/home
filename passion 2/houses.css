@@ -1,0 +1,33 @@
+@font-face {
+    font-family: rusch;
+    src: url(Rusch-GoticoAntiqua100G.otf);
+ }
+
+* {
+    box-sizing: border-box;
+    font-family: rusch;
+ }
+
+ body {
+    background-image: url('waves-bw-houses.png');
+
+ }
+
+ .title-button {
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    
+    top: 300px; 
+    left: 42%;
+    width: 250px;
+    border: 1px solid white;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: white; 
+    text-align: center;
+ }
+
+ .title-button:hover {
+    background-color: rgb(34, 0, 255);
+ }
