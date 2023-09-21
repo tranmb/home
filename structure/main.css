@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.main {
+    background-color: rgb(29, 17, 107);
+    
+    width: 100vw;
+    height: 100vh;
+
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.pond {
+    background-color:  rgb(29, 17, 107);
+
+    width: 500px;
+    height: 500px;
+    border-radius: 46% 54% 45% 55% / 58% 37% 63% 42% ;
+
+    display: flex;
+    flex-direction: column;
+
+
+    border: .3px dotted aliceblue;
+    overflow: hidden;
+}
+
+.pond:hover {
+    cursor: url('food2.png'), auto;
+}
+
+.water-row {
+    display: flex;
+    flex-direction: row;
+
+    height: 4%;
+
+    /* background-color:rgb(17, 50, 48); */
+}
+
+.water {
+    /* background-color: rgb(17, 50, 48); */
+    /* border: 1px solid black; */
+    
+    height:100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.water:hover {
+    background-color: rgb(225, 231, 234);
+}
+
+.big {
+    width: 62%;
+    border: .1px dotted rgb(225, 231, 234);
+}
+
+.med {
+    width: 23%;
+    border: .1px dotted rgb(225, 231, 234);
+}
+
+.sma {
+    width: 15%;
+    border: .1px dotted rgb(225, 231, 234);
+}

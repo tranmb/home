@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Script;
+    src: url(InstrumentSerif-Regular.otf);
+ }
+
+body {
+    margin:0;
+    cursor: crosshair;
+}
+
+.main {
+    background-color:#0d3547;
+    width: 4000px;
+    height: 1500px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.sup {
+    font-family: Script;
+    color:#eba9c0;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+}
+
+.first {
+    background-color:#0d3547;
+    height: 15%;
+    display: flex;
+     justify-content:space-between;
+     gap: 10px;
+}
+
+.second {
+    background-color:#0d3547;
+    height: 25%;
+
+    display: flex;
+     justify-content:space-between;
+     gap: 10px;
+}
+
+.third {
+    background-color:#0d3547;
+    height: 18%;
+    display: flex;
+     justify-content:space-between;
+     gap: 10px;
+}
+
+.fourth {
+    background-color:#0d3547;
+    height: 30%;
+    display: flex;
+     justify-content:space-between;
+     gap: 10px;
+}
+
+.fifth {
+    background-color:#0d3547;
+    height: 12%;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: rospaw;
+    gap: 10px;
+
+}
+
+
+.section {
+    width: 100%;
+    background-color:#0d3547;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emerging-fish {
+    background-color:#0d3547;
+    width: 80%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.outter-bubble {
+    background-color:#0d3547;
+    width: 80%;
+    height: 80%;
+
+    border-radius: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.outter-bubble:hover {
+    border: 1px dotted #eba9c0;
+}
+
+.middle-bubble {
+    background-color:#0d3547;
+    width: 80%;
+    height: 80%;
+
+    border-radius: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-bubble:hover {
+    border: 1px dotted rgb(235, 169, 192);
+}
+
+.inner-bubble {
+    background-color:#0d3547;
+    width: 80%;
+    height: 80%;
+
+    border-radius: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inner-bubble:hover {
+    border: 1px dotted  rgb(235, 169, 192);
+}
+
+.fishy {
+    color:#0d3547;
+    font-size: 23px;
+}
+
+.fishy:hover {
+    color:rgb(235, 169, 192);
+}
+
+.waves {
+    color: rgb(235, 169, 192);
+    font-size: 13px;
+}
