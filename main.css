@@ -1,7 +1,6 @@
 body {
-    background-color:rgb(163, 181, 240);
-    width: 100vh;
-    height: 100wh;
+    background-color:#a3b5f0;
+   
 }
 
 @font-face {
@@ -29,7 +28,7 @@ a:hover {
     /* background-color:whitesmoke; */
     /* padding: 10px; */
     position: absolute;
-    top: 42%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: leftx;
@@ -41,4 +40,8 @@ p {
     cursor:pointer;
     font-family: junicode;
     font-size: 16pt; 
+}
+
+.small {
+    font-size: 10pt;
 }
