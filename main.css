@@ -1,27 +1,44 @@
 body {
-    background-color:rgb(201, 228, 199);
+    background-color:rgb(163, 181, 240);
+    width: 100vh;
+    height: 100wh;
 }
 
-p {
-    background-color: rgb(136, 110, 154);
-    padding: 30px;
-    border-radius: 60px;
-}
+@font-face {
+    font-family: junicode;
+    src: url(Junicode-ItalicCondensed.ttf);
+  }
 
-p:hover {
-    font-size:30px;
-}
 
 a {
-    color: green;
+    color: #2c3254;
     text-decoration:none;
-    cursor:crosshair;
-}
-
-a:visited {
-    color:rgb(0, 0, 0);
+    cursor:pointer;
+    font-family: junicode;
+    font-size: 16pt;
 }
 
 a:hover {
-    background-color:rgb(136, 110, 154);
+    color:#ffebcd;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+
+    /* background-color:whitesmoke; */
+    /* padding: 10px; */
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: leftx;
+}
+
+p {
+    color: rgb(44, 50, 83);
+    text-decoration:none;
+    cursor:pointer;
+    font-family: junicode;
+    font-size: 16pt; 
 }
