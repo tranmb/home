@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin:0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#d9e021;
+    animation: color 8s alternate infinite;
+}
+
+@keyframes color {
+    0% {
+        background-color:#d9e021;
+    }
+    100% {
+        background-color:rgb(226,241,175);
+    }
+}
+
+.dandys {
+    width: 500px;
+    height:500px;
+}
+
+.flurry1 {
+    position:absolute;
+    width: 100px;
+    height: 100px;;
+    bottom:100px;
+    right: 200px;
+    animation: float 8s alternate-reverse infinite ease-in-out;
+}
+
+.flurry2 {
+    position:absolute;
+    width: 100px;
+    height: 100px;;
+    bottom:49px;
+    left:87px;
+    animation: float 8s alternate infinite ease-in-out;
+}
+
+.flurry3new {
+    position: absolute;
+    top:149px;
+    right:310px;
+    width: 100px;
+    height: 100px;
+}
+
+.flurry3 {
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    bottom:149px;
+    left:227px;
+    animation: float 8s alternate-reverse infinite ease-in-out;
+}
+
+.flurry4 {
+    position:absolute;
+    width: 100px;
+    height: 100px;;
+    bottom:78px;
+    left:445px;
+    animation: float 8s alternate infinite ease-in-out;
+}
+
+.flurry4new {
+    position:absolute;
+    width: 100px;
+    height: 100px;;
+    bottom:312px;
+    left:800px;
+}
+
+.flurry5 {
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 299px;
+    left: 700px;
+    animation: float 8s alternate infinite ease-in-out;
+}
+
+.flurry6 {
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    bottom: -80px;
+    left: 921px;
+    animation: float 8s alternate infinite ease-in-out;
+}
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+        /* transform: rotateY(0deg); */
+        opacity: 0%;
+    }
+    30% {
+        opacity: 100%;
+    }
+    70% {
+        opacity: 100%;
+    }
+    100% {
+        transform: translateY(-500px);
+        opacity: 0%;
+        /* transform: rotateY(360deg); */
+
+    }
+}
+
+.spin {
+    animation: spin 8s alternate infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+        opacity: 0%;
+    }
+    30% {
+        opacity: 100%;
+    }
+    70% {
+        opacity: 100%;
+    }
+    100% {
+        transform: rotateY(360deg);
+        opacity: 0%;
+    }
+}
