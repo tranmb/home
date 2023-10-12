@@ -163,7 +163,7 @@
     height: 415px;
 }
 
-@media screen and (width:735px)and (width:734px) and (width:736px)and (height:415px) {
+@media screen and (width:735px) and (height:415px) {
 
     .walk-in-closet {
         background-image: url(closet.png);
