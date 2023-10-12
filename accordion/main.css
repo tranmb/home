@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    cursor: crosshair;
+}
+
+
+
+.banner {
+    height: 30px;	
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.banner p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 30px;
+    text-align: left;
+    transform:translateX(100%);
+    animation: scroll-right 12s linear infinite;
+    font-style: italic;
+}
+
+@keyframes scroll-right {
+    0%   {
+    transform: translateX(-15%); 		
+    }
+    100% {
+    transform: translateX(100%); 
+    }
+   }
+
+.section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: solid 1px red;
+}
+
+.label {
+    color:red;
+    text-align: right;
+    position:absolute;
+    right: 0;
+    bottom: -13px;
+    background-color: white;
+    padding: 5px;
+}
+
+.kitchen {
+    width: 1000px;
+    height: 500px;
+}
+
+@media screen and (width:1000px) and (height:500px){
+    
+    .kitchen{
+        background-image: url(kitchen.png);
+        max-width: 100%;
+        max-height:100%;
+    }
+
+    .label {
+        display:none;
+    }
+
+    .section {
+        border: none;
+    }
+}
+
+.bedroom {
+    width: 800px;
+    height: 700px;
+}
+
+@media screen and (width: 800px) and (height:700px){
+
+    .bedroom {
+        background-image: url(bedroom.png);
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .label {
+        display:none;
+    }
+
+    .section {
+        border: none;
+    }
+}
+
+.living-room {
+    width: 850px;
+    height: 550px;
+}
+
+@media screen and (width:850px) and (height:550px) {
+
+    .living-room {
+        background-image: url(living-room.png);
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .label {
+        display: none;
+    }
+
+    .section {
+        border:none;
+    }
+}
+
+.backyard {
+    width: 1500px;
+    height: 740px;
+}
+
+@media screen and (width:1500px) and (height:740px) {
+
+    .backyard {
+        background-image: url(backyard.png);
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .label {
+        display: none;
+    }
+
+    .section {
+        border:none;
+    }
+}
+
+.bathroom {
+    width: 500px;
+    height: 400px;
+}
+
+@media screen and (width:500px) and (height:400px){
+    
+    .bathroom{
+        background-image: url(bathroom.png);
+        max-width: 100%;
+        max-height:100%;
+    }
+
+    .label {
+        display:none;
+    }
+}
+
+.walk-in-closet {
+    width: 735px;
+    height: 415px;
+}
+
+@media screen and (width:735px)and (width:734px) and (width:736px)and (height:415px) {
+
+    .walk-in-closet {
+        background-image: url(closet.png);
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .label {
+        display: none;
+    }
+}
+
+.attic {
+    width: 1425px;
+    height: 630px;
+}
+
+@media screen and (width:1425px) and (height:630px) {
+
+    .attic {
+        background-image: url(attic.png);
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .label {
+        display: none;
+    }
+
+    .section {
+        border:none;
+    }
+}

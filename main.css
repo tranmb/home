@@ -4,8 +4,8 @@ body {
 }
 
 @font-face {
-    font-family: junicode;
-    src: url(Junicode-ItalicCondensed.ttf);
+    font-family: garamond;
+    src: url(EBGaramond08-Regular.ttf);
   }
 
 
@@ -13,8 +13,8 @@ a {
     color: #2c3254;
     text-decoration:none;
     cursor:pointer;
-    font-family: junicode;
-    font-size: 16pt;
+    font-family: garamond;
+    font-size: 12pt;
 }
 
 a:hover {
@@ -29,7 +29,7 @@ a:hover {
     /* padding: 10px; */
     position: absolute;
     top: 20%;
-    left: 50%;
+    left: 12%;
     transform: translate(-50%, -50%);
     text-align: leftx;
 }
@@ -38,8 +38,8 @@ p {
     color: rgb(44, 50, 83);
     text-decoration:none;
     cursor:pointer;
-    font-family: junicode;
-    font-size: 16pt; 
+    font-family: garamond;
+    font-size: 12pt; 
 }
 
 .small {
