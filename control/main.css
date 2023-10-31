@@ -1,0 +1,554 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    background-color:#c2d1e9;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title {
+    /* background-color: lightsalmon; */
+    width: 1100px;
+    height: 60px;
+    text-align: center;
+
+    display: flex;
+    gap: 10px;    
+    /* border: 1px solid black; */
+}
+
+.reset {
+    height: 100%;
+    width: 25%;
+    background-color: peachpuff;
+    border: solid 1px black;
+    border-radius: 50px 50px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color .3s;
+
+}
+
+.reset:visited {
+    color: black;
+}
+
+.reset:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+.header {
+    height: 100%;
+    width: 75%;
+    background-color:peachpuff;
+    border: solid 1px black;
+    border-radius: 50px 50px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.console {
+    /* background-color: lightcyan; */
+    width: 1100px;
+    height: 600px;
+
+    display: flex;
+    gap: 10px;
+    z-index: 1;
+}
+
+.column-1 {
+    background-color: lightgoldenrodyellow;
+    width: 25%;
+    height: 100%;
+
+    border: 1px solid black;
+}
+
+.main-menu {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.to-destination {
+    background-color:peachpuff;
+    width: 93%;
+    height: 18%;
+
+    border: black 1px solid;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    transition: background-color .3s;
+
+}
+
+.dark-btn {
+    background-color:peachpuff;
+    width: 93%;
+    height: 18%;
+
+    border: black 1px solid;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color:black;
+    transition: background-color .3s;
+}
+
+
+.dark-btn:hover {
+    background-color: lightgoldenrodyellow;
+    /* transition: background-color .10s; */
+
+}
+
+.to-destination:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+.to-destination:visited {
+   color: black;
+}
+
+.column-2 {
+    /* background-color: lightgrey; */
+    width: 75%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-menu {
+    background-color:lightgoldenrodyellow;
+    width: 100%;
+    height: 20%;
+
+    border: solid 1px black;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.screen {
+    background-color:darkseagreen;
+    width: 100%;
+    height: 85%;
+
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome {
+    background: radial-gradient(circle, rgba(250,250,210,1) 37%, rgba(255,218,185,1) 69%);
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun {
+    position:absolute;
+    top: 273px;
+    left: 726px;
+    width: 100px;
+    height:100px;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+.grass {
+    width: 100vw;
+    height: 250px;
+    position: absolute;
+    /* z-index: -1; */
+    /* background: linear-gradient(0deg, rgba(143,188,143,1) 19%, rgba(250,250,210,1) 97%); */
+    background-color: rgb(182, 227, 182);
+    bottom: 0px;
+    border: 1px solid black;
+}
+
+/* PASTURE STUFF */
+
+.cow-button {
+    background-color:peachpuff;
+    width: 31.5%;
+    height: 80%;
+
+    border: solid 1px rgb(7, 55, 100);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .5s;
+
+}
+
+.cow-button:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+.sheep-button{
+    background-color:peachpuff;
+    width: 31.5%;
+    height: 80%;
+
+    border: solid 1px black;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .5s;
+
+}
+
+.sheep-button:hover {
+    background-color: #fafad2;
+}
+
+.emu-button{
+    background-color:#ffdab9;
+    width: 31.5%;
+    height: 80%;
+
+    border: solid 1px black;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .2s,
+
+}
+
+.emu-button:hover {
+    background-color: #fafad2;
+    /* transition: background-color .2s, */
+
+}
+
+.emu-snark {
+    background-color:#8fbc8f;
+    width: 31.5%;
+    height: 80%;
+
+    border: solid 1px black;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    /* transition: background-color .2s, */
+}
+
+
+.original-cow {
+    height: 80px;
+    width: auto;
+    position: absolute;
+    top: 500px;
+    left:600px;
+}
+
+.original-sheep {
+    height: 140px;
+    width: auto;
+    position: absolute;
+    top: 400px;
+    left:1000px;
+}
+
+.emu {
+    width: 180px;
+    height:auto;
+    opacity:0;
+    transition: opacity .2s;
+}
+
+/* PUMPKIN PATCH */
+
+.middle-pumpkin {
+    width: 130px;
+    height: auto;
+
+    position: absolute;
+    top: 300px;
+    left: 500px;
+}
+
+.a {
+    position: absolute;
+    top: 480px;
+    left: 1000px;
+}
+
+.b {
+    position: absolute;
+    top: 270px;
+    left: 760px;
+}
+
+.c {
+    position:absolute;
+    top: 590px;
+    left: 780px;
+}
+
+.small-pumpkin {
+    width: 130px;
+    height: auto;
+
+    position: absolute;
+    top: 500px;
+    left: 800px;
+}
+
+.d {
+    position: absolute;
+    top: 280px;
+    left: 1180px;
+}
+
+.e {
+    position: absolute;
+    top: 439px;
+    left: 649px;
+}
+
+.f {
+    position:absolute;
+    top: 570px;
+    left: 727px;
+}
+
+.big-pumpkin {
+    width: 160px;
+    height: auto;
+
+    position: absolute;
+    top: 530px;
+    left: 600px;
+}
+
+.h {
+    position: absolute;
+    top: 379px;
+    left: 842px;
+}
+
+.i {
+    position: absolute;
+    top: 590px;
+    left: 1110px;
+}
+
+.j {
+    position: absolute;
+    top:  331px;
+    left: 952px;
+    z-index: 1;
+
+}
+
+.cat {
+    width: 90px;
+    height:auto;
+    position:absolute;
+    top: 371px;
+    left: 989px;
+    /* z-index: -1; */
+}
+
+/* CORN! */
+
+.plant-button {
+    background-color:peachpuff;
+    width: 31.5%;
+    height: 80%;
+
+    border: solid 1px black;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .5s;
+}
+
+.plant-button:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+
+.grow-button {
+    background-color:peachpuff;
+    width: 31.5%;
+    height: 80%;
+
+    border: solid 1px black;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .2s;
+}
+
+.grow-button:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+.harvest-button {
+    background-color:peachpuff;
+    width: 31.5%;
+    height: 80%;
+
+    border: solid 1px black;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .2s;
+}
+
+.harvest-button:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+.seed {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 400px;
+    left: 800px;
+    display: none;
+}
+
+.stalk {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 400px;
+    left: 800px;
+    display: none;
+}
+
+.grown {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 400px;
+    left: 800px;
+    display: none;
+}
+
+.z {
+    position: absolute;
+    top: 400px;
+    left: 1000px;
+}
+
+.x {
+    position:absolute;
+    top: 400px;
+    left: 600px;
+}
+
+.y {
+    position:absolute;
+    top: 280px;
+    left: 700px;
+}
+
+.m {
+    position:absolute;
+    top: 280px;
+    left: 900px;
+}
+
+.p {
+    position:absolute;
+    top: 280px;
+    left: 500px;
+}
+
+.t {
+    position:absolute;
+    top: 280px;
+    left: 1100px;
+}
+
+.r {
+    position:absolute;
+    top: 520px;
+    left: 1100px;
+}
+
+.w {
+    position:absolute;
+    top: 520px;
+    left: 500px;
+}
+
+.o {
+    position:absolute;
+    top: 520px;
+    left: 900px;
+}
+
+.u {
+    position:absolute;
+    top: 520px;
+    left: 700px;
+}
+
+
+
+
+
