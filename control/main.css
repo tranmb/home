@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    background-color:#c2d1e9;
+    background-color:#b6cbed;
     width: 100vw;
     height: 100vh;
 
@@ -16,6 +16,11 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 10px;
+    transition: background-color .3s;
+}
+
+.container.dark {
+    background-color: #1f2a3d;
 }
 
 .title {
@@ -43,12 +48,20 @@ body {
 
 }
 
+.reset.dark {
+    background-color:#426059;
+}
+
 .reset:visited {
     color: black;
 }
 
 .reset:hover {
     background-color: lightgoldenrodyellow;
+}
+
+.reset:hover.dark {
+    background-color: #2f3c51;
 }
 
 .header {
@@ -60,7 +73,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color .3s;
+}
 
+.header.dark {
+    background-color: #426059;
 }
 
 .console {
@@ -79,6 +96,11 @@ body {
     height: 100%;
 
     border: 1px solid black;
+    transition: background-color .3s;
+}
+
+.column-1.dark {
+    background-color: #2f3c51;
 }
 
 .main-menu {
@@ -109,6 +131,11 @@ body {
 
 }
 
+.to-destination.dark {
+    background-color: #426059;
+}
+
+
 .dark-btn {
     background-color:peachpuff;
     width: 93%;
@@ -126,6 +153,10 @@ body {
     transition: background-color .3s;
 }
 
+.dark-btn.dark {
+    background-color: #426059;
+}
+
 
 .dark-btn:hover {
     background-color: lightgoldenrodyellow;
@@ -133,8 +164,16 @@ body {
 
 }
 
+.dark-btn:hover.dark {
+    background-color: #2f3c51;
+}
+
 .to-destination:hover {
     background-color: lightgoldenrodyellow;
+}
+
+.to-destination:hover.dark {
+    background-color: #2f3c51;
 }
 
 .to-destination:visited {
@@ -161,10 +200,15 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    transition: background-color .3s;
+}
+
+.button-menu.dark {
+    background-color:#2f3c51;
 }
 
 .screen {
-    background-color:darkseagreen;
+    background-color:rgb(182, 227, 182);
     width: 100%;
     height: 85%;
 
@@ -173,10 +217,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color .3s;
+}
+
+.screen.dark {
+    background-color:#25342f;
 }
 
 .welcome {
-    background: radial-gradient(circle, rgba(250,250,210,1) 37%, rgba(255,218,185,1) 69%);
+    background-color: lightgoldenrodyellow;
+
     width: 100%;
     height: 100%;
 
@@ -185,18 +235,49 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color .3s;
 }
+
+.welcome.dark {
+    background-color:#2f3c51;
+
+}
+
+/* @keyframes gradient {
+    0% {
+        background: radial-gradient(circle, rgba(250,250,210,1) 37%, rgba(255,218,185,1) 69%);
+    }
+    100% {
+        background: radial-gradient(circle, rgb(72, 63, 80) 0%, rgba(31,42,61,1) 68%);
+    }
+} */
 
 .sun {
     position:absolute;
-    top: 273px;
+    top: 233px;
     left: 726px;
     width: 100px;
     height:100px;
-    background-color: lightgoldenrodyellow;
+    background-color:lightgoldenrodyellow;
     border: 1px solid black;
     border-radius: 100%;
+    /* transition: background-color 10s; */
+    z-index: 8;
+
 }
+
+.sun.dark {
+    background-color:#2f3c51;
+    transition: transform 3s ease;
+    transform: translateY(280px);
+}
+
+.back {
+    position: absolute;
+    top:50px;
+    left:50px;
+}
+
 
 .grass {
     width: 100vw;
@@ -206,7 +287,12 @@ body {
     /* background: linear-gradient(0deg, rgba(143,188,143,1) 19%, rgba(250,250,210,1) 97%); */
     background-color: rgb(182, 227, 182);
     bottom: 0px;
-    border: 1px solid black;
+    border-top: 1px solid black;
+    transition: background-color .3s;
+}
+
+.grass.dark {
+    background-color: #25342f;
 }
 
 /* PASTURE STUFF */
@@ -216,18 +302,26 @@ body {
     width: 31.5%;
     height: 80%;
 
-    border: solid 1px rgb(7, 55, 100);
+    border: solid 1px rgb(0, 0, 0);
     border-radius: 10px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color .5s;
+    transition: background-color .3s;
 
+}
+
+.cow-button.dark {
+    background-color:#426059;
 }
 
 .cow-button:hover {
     background-color: lightgoldenrodyellow;
+}
+
+.cow-button:hover.dark {
+    background-color: #2f3c51;
 }
 
 .sheep-button{
@@ -241,15 +335,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color .5s;
+    transition: background-color .3s;
 
+}
+
+.sheep-button.dark {
+    background-color: #426059;
 }
 
 .sheep-button:hover {
     background-color: #fafad2;
 }
 
-.emu-button{
+.sheep-button:hover.dark {
+    background-color: #2f3c51;
+}
+
+.emu-button {
     background-color:#ffdab9;
     width: 31.5%;
     height: 80%;
@@ -260,18 +362,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color .2s,
+    transition: background-color .3s;
+}
 
+.emu-button.dark {
+    background-color: #426059;
 }
 
 .emu-button:hover {
     background-color: #fafad2;
-    /* transition: background-color .2s, */
+}
 
+.emu-button:hover.dark {
+    background-color: #2f3c51;
 }
 
 .emu-snark {
-    background-color:#8fbc8f;
+    background-color:rgb(182, 227, 182);
     width: 31.5%;
     height: 80%;
 
@@ -283,7 +390,11 @@ body {
     align-items: center;
     display: none;
 
-    /* transition: background-color .2s, */
+    transition: background-color .3s;
+}
+
+.emu-snark.dark {
+    background-color:#25342f;
 }
 
 
@@ -307,7 +418,7 @@ body {
     width: 180px;
     height:auto;
     opacity:0;
-    transition: opacity .2s;
+    transition: opacity .3s;
 }
 
 /* PUMPKIN PATCH */
@@ -417,13 +528,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color .5s;
+    transition: background-color .3s;
+}
+
+.plant-button.dark {
+    background-color:#426059;
 }
 
 .plant-button:hover {
     background-color: lightgoldenrodyellow;
 }
 
+.plant-button:hover.dark {
+    background-color: #2f3c51;
+}
 
 .grow-button {
     background-color:peachpuff;
@@ -436,11 +554,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color .2s;
+    transition: background-color .3s;
+}
+
+.grow-button.dark {
+    background-color: #426059;
 }
 
 .grow-button:hover {
     background-color: lightgoldenrodyellow;
+}
+
+.grow-button:hover.dark {
+    background-color: #2f3c51;
 }
 
 .harvest-button {
@@ -454,11 +580,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color .2s;
+    transition: background-color .3s;
+}
+
+.harvest-button.dark {
+    background-color: #426059;
 }
 
 .harvest-button:hover {
     background-color: lightgoldenrodyellow;
+}
+
+.harvest-button:hover.dark {
+    background-color: #2f3c51;
 }
 
 .seed {

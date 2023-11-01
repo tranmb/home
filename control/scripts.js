@@ -32,6 +32,45 @@ $(".emu-button").click(
 );
 
 //dark mode
+$(".dark-btn").click(
+  function(){
+    //welcome
+    $(".welcome").toggleClass("dark");
+    $(".sun").toggleClass("dark");
+
+    //main elements
+    $(".container").toggleClass("dark");
+    $(".grass").toggleClass("dark");
+    $(".column-1").toggleClass("dark");
+    $(".to-destination").toggleClass("dark");
+    $(".dark-btn").toggleClass("dark");
+    $(".reset").toggleClass("dark");
+    $(".header").toggleClass("dark");
+    $(".button-menu").toggleClass("dark");
+    $(".screen").toggleClass("dark");
+    //hover
+    $(".reset:hover").toggleClass("dark");
+    $(".to-destination:hover").toggleClass("dark");
+    //paster specific
+    $(".cow-button").toggleClass("dark");
+    $(".cow-button:hover").toggleClass("dark");
+    $(".sheep-button").toggleClass("dark");
+    $(".sheep-button:hover").toggleClass("dark");
+    $(".emu-button").toggleClass("dark");
+    $(".emu-button:hover").toggleClass("dark");
+    $(".emu-snark").toggleClass("dark");
+    //corn specific
+    $(".plant-button").toggleClass("dark");
+    $(".plant-button:hover").toggleClass("dark");
+    $(".grow-button").toggleClass("dark");
+    $(".grow-button:hover").toggleClass("dark");
+    $(".harvest-button").toggleClass("dark");
+    $(".harvest-button:hover").toggleClass("dark");
+
+  }
+);
+
+//dark mode
 // $(".dark-btn").click(
 //     function(){
 //     $(".container").toggleClass("dark");
