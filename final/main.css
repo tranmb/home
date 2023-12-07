@@ -641,3 +641,63 @@ img {
     background-color: yellowgreen;
     transition: .3s;
 }
+
+.email-popup {
+    position:absolute;
+    top: 289px;
+    left: 876px;
+
+    width: 200px;
+    height: 150px;
+    background-color: violet;
+    border: solid .2vw black;
+
+    display: none;
+    flex-direction: column;  
+
+}
+
+.email-title {
+    width: 100%;
+    height: 40%;
+    background-color:#ddffa9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Handjet', sans-serif;
+    border-bottom: black .1vw solid;
+    font-size: 20pt;
+}
+
+.form {
+    height: 40%;
+    padding: 7px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    font-weight: bold;
+    background-color: #ee82ee;
+    border-bottom: .1vw solid black;
+}
+
+.submit {
+    width: 100%;
+    height: 20%;
+    background-color:#ddffa9;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    font-family: 'Handjet', sans-serif;
+    
+
+}
+
+.submit:hover {
+    background-color: yellowgreen;
+    transition: .3s;
+}
+
+

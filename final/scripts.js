@@ -66,3 +66,18 @@ $(document).ready(function(){
 $(".justin-x-2").on("click", function() {
     $(".justin-2").css({opacity:0})
 });
+
+
+
+$(document).ready(function(){
+
+    $( ".sign-up" ).on( "click", function() {
+        $('.email-popup').css({opacity: 1, display: 'flex',})
+       
+      });
+}
+);
+
+$(".submit").on("click", function() {
+    $(".email-popup").css({opacity:0})
+});
